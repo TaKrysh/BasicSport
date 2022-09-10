@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport 🏃‍♀️</title>
+    <style>
+      body {
+        background-image: linear-gradient(93.1deg, rgb(238, 254, 183) 19.1%, rgb(169, 254, 222) 53.9%, rgb(90, 222, 255) 92%);
+        color: rgb(27, 24, 24);
+        width: 50%;
+        margin: 60px auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #fff;
+        padding: 20px;
+        border-radius:  4px;
+        color: #1db8df;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        color: #ecca33;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba (0,0,0,0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0,9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600 px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+      .learn-more {
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 11px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      </style>
+ </head>
+  <body>
+      
+    <div class="container">
+      <h1>
+        I love Sport 🏃‍♀️
+      </h1>
+      <h2>
+        Especially Biking 🚴🏻‍♀️
+      </h2>
+      <br />
+      <img
+        src="https://hdpic.club/uploads/posts/2021-12/1639357591_43-hdpic-club-p-velosiped-na-prirode-56.jpg"
+        alt="Biking"
+      />
+      <br />
+      <p>
+        <span>
+        Sport makes us stronger and more resilient. <strong>Biking</strong>, cyclocross, extreme mountain biking are sports that are popular among all generations. Firstly, a bicycle is an active recreation and a means of maintaining good physical shape, and Secondly, it is an environmentally friendly mode of transport for daily trips, for example, to work or study.
+        </span>
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Cycling"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <hr />
+      <button class="buyButton">
+        👉 Buy Bike
+      </button>
+      <p class="footer">
+        This page was built by
+        <a href="https://codepen.io/" target="_blank">
+          <em>Tatiana Kryshtal</em>
+        </a>
+      </p>
+    </div>
+    <script>
+    function buy () 
+    {
+      
+      let name = prompt("What is your name?");
+      var minNameLength=1;
+      if (name.length<minNameLength) 
+        {alert("No name, no Bikes for you!(((");
+        } 
+      else { 
+        let email= prompt("What is your email adress?");
+        var minEmailLength=3;
+        if (email.length>minEmailLength)
+        alert("Thanks, " + name + " , we will be in touch by email. Meanwhile, have a lot of Bikes!🚴🏻‍♀️");   
+          else {alert("No email, no Bikes for you!(((");
+               }
+      };
+    }
+    let buyButton = document.querySelector(".buyButton");
+    buyButton.addEventListener("click",buy);
+  </script>
+  </body>
+</html>
